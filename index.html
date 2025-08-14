@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>Virtual Art Exhibition</title> 
+<style> 
+body { 
+    font-family: sans-serif; 
+    background: #fdfdfd; 
+    color: #222; 
+    margin: 0; 
+} 
+header { 
+    background: linear-gradient(to right, #2c3e50, #3498db); 
+    padding: 20px; 
+    color: white; 
+    text-align: center; 
+} 
+.title { 
+    font-size: 28px; 
+} 
+/* Banner styling */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+}
+.welcome { 
+    text-align: center; 
+    padding: 40px 20px; 
+    background: #f0f8ff; 
+} 
+.welcome h2 { 
+    font-size: 32px; 
+} 
+.welcome p { 
+    max-width: 700px; 
+    margin: 0 auto; 
+} 
+.gallery { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 15px; 
+    padding: 40px 20px; 
+} 
+.gallery-item { 
+    height: 200px; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+} 
+.caption { 
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0,0,0,0.6); 
+    color: white; 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+} 
+.content-section { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 40px 20px; 
+    flex-wrap: wrap; 
+} 
+.content-section.reverse { 
+    flex-direction: row-reverse; 
+} 
+.content-section img { 
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+} 
+footer { 
+    background: #2c3e50; 
+    color: white; 
+    text-align: center; 
+    padding: 15px 0; 
+} 
+</style> 
+</head> 
+<body> 
+
+<header> 
+    <div class="header-content"> 
+        <h1 class="title">Virtual Art Exhibition</h1> 
+    </div> 
+</header> 
+
+<!-- Banner Section -->
+<section class="banner">
+    <img src="banner.jpeg" alt="Exhibition Banner">
+</section>
+
+<section class="welcome"> 
+    <h2>Welcome to the World of Art</h2> 
+    <p>Experience a curated collection of visual wonders from renowned and emerging artists 
+    around the world—all from the comfort of your screen.</p> 
+</section> 
+
+<section class="gallery"> 
+    <div class="gallery-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqR9DVy9DnlUy7qJGOUkpsiZHUXNGRDE5dQ&s');"> 
+        <div class="caption">"Mystic Forest" by A. Ray</div> 
+    </div> 
+    <div class="gallery-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSLAjYseT16DDDDBOs5loMkr_iBvMVckXK9A&s');"> 
+        <div class="caption">"Urban Melody" by K. Shah</div> 
+    </div> 
+    <div class="gallery-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRIsTd7DF26bYZlHkvP7E6jDZoS5j8P50UrA&s');"> 
+        <div class="caption">"Silent Depths" by Y. Nair</div> 
+    </div> 
+</section> 
+
+<section class="content-section"> 
+    <div class="text"> 
+        <h3>Interactive Virtual Tours</h3> 
+        <p>Walk through virtual rooms filled with captivating pieces, enriched with background 
+        stories and artist interviews. Interactive virtual tours enhance content by offering a dynamic, 
+        immersive experience that allows users to explore spaces and products as if they were physically 
+        there, fostering deeper engagement, building trust through transparency, and providing a 
+        powerful tool for storytelling and marketing across various industries.</p> 
+        <p>In essence, Interactive Virtual Tours (IVTs) leverage digital technology to create 
+        immersive, 360-degree experiences of real or imagined locations, allowing users to virtually step 
+        inside a space, explore it at their own pace, and interact with its features. This dynamic 
+        engagement goes beyond static images or videos by allowing users to click on hotspots for more 
+        information, navigate through different areas, and even interact with elements like floor plans or 
+        embedded videos.</p> 
+    </div> 
+</section> 
+
+<section class="content-section reverse"> 
+    <div class="text"> 
+        <h3>Featured Exhibitions</h3> 
+        <p>Explore curated collections highlighting themes like surrealism, digital art, 
+        environmental storytelling, and more.</p> 
+    </div> 
+</section> 
+
+<footer> 
+    <p>&copy; 2025 Sri's Virtual Art Exhibition.</p> 
+</footer> 
+
+</body> 
+</html>
